@@ -2,6 +2,8 @@
   "page": {
     "hello": "Hello, {{name}}!",
     "changeLanguage": "Change language to Russian",
+    "langEnButton": "Switch to English",
+    "langRuButton": "Switch to Russian",
     "dashboardTitle": "User Dashboard",
     "profile": "My profile"
   }

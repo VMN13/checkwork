@@ -2,6 +2,8 @@
   "page": {
     "hello": "Привет, {{name}}!",
     "changeLanguage": "Переключить язык на английский",
+    "langEnButton": "Переключить на английский",
+    "langRuButton": "Переключить на русский",
     "dashboardTitle": "Личный кабинет",
     "profile": "Мой профиль"
   }
