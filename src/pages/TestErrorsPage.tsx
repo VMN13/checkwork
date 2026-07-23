@@ -98,8 +98,6 @@ export default function TestErrorsPage() {
               className="rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-sm hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-800"
               onClick={() => {
                 setTimeout(() => {
-                  // This will not be caught by React error boundaries; shown here for awareness.
-                  // eslint-disable-next-line no-throw-literal
                   throw new Error("Async error (setTimeout) — may not be caught by ErrorBoundary");
                 }, 50);
               }}

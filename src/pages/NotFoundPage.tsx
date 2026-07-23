@@ -2,7 +2,6 @@ import { useEffect } from "react";
 
 export default function NotFoundPage() {
   useEffect(() => {
-    // В SPA (hash-router) нет реального HTTP 404, но делаем UX-объявление.
     document.title = "404 Not found";
   }, []);
 

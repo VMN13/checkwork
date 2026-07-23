@@ -11,7 +11,7 @@ function getStoredRole(): Role {
 }
 
 export default function HeaderBar() {
-  // @ts-expect-error - workaround for overly-deep generic instantiation in react-i18next types
+  // @ts-expect-error
   const { i18n } = useTranslation();
   const [role] = useState<Role>(() => getStoredRole());
   const [query, setQuery] = useState("");
@@ -188,7 +188,6 @@ export default function HeaderBar() {
           </div>
 
           <div className="flex flex-col gap-2 sm:items-end sm:flex-row sm:gap-3">
-            {/* Language Switcher integrated */}
             <div className="flex items-center gap-1 rounded-md border border-gray-200 bg-white p-0.5 dark:border-gray-700 dark:bg-gray-800">
               <button
                 type="button"

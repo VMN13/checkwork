@@ -3,6 +3,8 @@ import { TranslationTypes } from "@/i18n/translations/TranslationTypes";
 
 declare module "i18next" {
   interface CustomTypeOptions {
-    resources: TranslationTypes;
+    resources: {
+      translation: TranslationTypes;
+    };
   }
 }
