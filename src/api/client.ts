@@ -1,12 +1,10 @@
-// Определяем базовый URL API
-// В production на Vercel должен быть установлен VITE_API_BASE_URL
-// Если не установлен - используем сервер по умолчанию
+
 const API_BASE_URL = (() => {
   const envUrl = import.meta.env.VITE_API_BASE_URL;
   if (envUrl && typeof envUrl === 'string' && envUrl.trim().length > 0) {
     return envUrl.trim().replace(/\/+$/, '');
   }
-  // По умолчанию используем развернутый сервер
+
   return 'https://server-app-five.vercel.app';
 })();
 
