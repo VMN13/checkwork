@@ -11,7 +11,7 @@ function getStoredRole(): Role {
 }
 
 export default function HeaderBar() {
-  // @ts-expect-error
+
   const { i18n } = useTranslation();
   const [role] = useState<Role>(() => getStoredRole());
   const [query, setQuery] = useState("");

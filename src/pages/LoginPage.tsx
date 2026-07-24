@@ -27,7 +27,7 @@ export default function LoginPage() {
       setStatus("error");
       const msg =
         (typeof err === "object" && err !== null && "body" in err
-          ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          ? // eslint
             (err as any)?.body?.message
           : undefined) ??
         (err instanceof Error ? err.message : undefined) ??
