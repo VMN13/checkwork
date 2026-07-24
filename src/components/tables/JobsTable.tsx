@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/incompatible-library */
+
 import {
   flexRender,
   getCoreRowModel,
@@ -13,7 +13,7 @@ export type Job = {
   id: string;
   title: string;
   company: string;
-  updatedAt: string; // ISO
+  updatedAt: string; 
   salaryMin?: number;
   salaryMax?: number;
   location: string;

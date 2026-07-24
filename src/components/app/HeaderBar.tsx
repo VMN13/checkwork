@@ -21,7 +21,6 @@ export default function HeaderBar() {
   });
 
   useEffect(() => {
-    // keep in sync if token changed elsewhere
     const onStorage = (e: StorageEvent) => {
       if (e.key === "auth.accessToken") setAccessToken(e.newValue);
     };

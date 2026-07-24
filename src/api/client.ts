@@ -6,7 +6,8 @@ const API_BASE_URL = (() => {
   if (envUrl && typeof envUrl === 'string' && envUrl.trim().length > 0) {
     return envUrl.trim().replace(/\/+$/, '');
   }
-  return 'https://serverusers-lyart.vercel.app';
+  // По умолчанию используем развернутый сервер
+  return 'https://server-app-five.vercel.app';
 })();
 
 console.log('[API Client] Base URL:', API_BASE_URL);

@@ -131,11 +131,7 @@ export default function ResumeDetailsPage({ id }: { id: string }) {
 
       <div className="rounded-lg border border-green-200 bg-white p-4 text-sm text-gray-800 dark:border-green-500/40 dark:bg-gray-900 dark:text-gray-100">
         <h2 className="mb-2 text-lg font-semibold">Описание (mock)</h2>
-        <p className="text-gray-700 dark:text-gray-200">
-          Демонстрационная страница резюме. Здесь должен быть сгенерированный
-          текст резюме и отредактируемые/проверяемые атрибуты (в этой задаче —
-          mock для навигации, сохранения и печати).
-        </p>
+     
 
         <KeyValueTable
           rows={[
